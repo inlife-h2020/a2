@@ -669,6 +669,14 @@ function updateUserInfo(userId, req, res, cb) {
             update.$set['name.last'] = req.body.name.last;
         }
     }
+    if (req.body.profile) {
+        if (req.body.profile.address) {
+            update.$set['profile.address'] = req.body.profile.address;
+        }
+        if (req.body.profile.picture) {
+            update.$set['profile.picture'] = req.body.profile.picture;
+        }
+    }
 
     var options = {
         new: true,
