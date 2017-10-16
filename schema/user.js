@@ -82,6 +82,18 @@ module.exports = function (app, mongoose) {
             address: {
                 type: String,
                 default: ''
+            },
+            age: {
+                type: String,
+                default: ''
+            },
+            contactNumber: {
+                type: String,
+                default: ''
+            },
+            email: {
+                type: String,
+                default: ''
             }
         }
     });
