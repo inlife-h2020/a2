@@ -676,6 +676,15 @@ function updateUserInfo(userId, req, res, cb) {
         if (req.body.profile.picture) {
             update.$set['profile.picture'] = req.body.profile.picture;
         }
+        if (req.body.profile.age) {
+            update.$set['profile.age'] = req.body.profile.age;
+        }
+        if (req.body.profile.contactNumber) {
+            update.$set['profile.contactNumber'] = req.body.profile.contactNumber;
+        }
+        if (req.body.profile.school) {
+            update.$set['profile.school'] = req.body.profile.school;
+        }
     }
 
     var options = {

@@ -91,7 +91,7 @@ module.exports = function (app, mongoose) {
                 type: String,
                 default: ''
             },
-            email: {
+            school: {
                 type: String,
                 default: ''
             }
