@@ -94,6 +94,14 @@ module.exports = function (app, mongoose) {
             school: {
                 type: String,
                 default: ''
+            },
+            cartId: {
+                type: String,
+                default: ''
+            },
+            deviceId: {
+                type: String,
+                default: ''
             }
         }
     });

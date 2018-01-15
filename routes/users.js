@@ -685,6 +685,12 @@ function updateUserInfo(userId, req, res, cb) {
         if (req.body.profile.school) {
             update.$set['profile.school'] = req.body.profile.school;
         }
+        if (req.body.profile.cardId) {
+            update.$set['profile.cardId'] = req.body.profile.cardId;
+        }
+        if (req.body.profile.deviceId) {
+            update.$set['profile.deviceId'] = req.body.profile.deviceId;
+        }
     }
 
     var options = {
