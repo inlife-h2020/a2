@@ -95,7 +95,7 @@ module.exports = function (app, mongoose) {
                 type: String,
                 default: ''
             },
-            cartId: {
+            cardId: {
                 type: String,
                 default: ''
             },
